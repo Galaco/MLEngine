@@ -2,8 +2,8 @@
 #define GPUTEXTURE_H
 
 #include "ImageTexture.h"
-#include "GL\glew.h"
-#include "..\Interfaces\IGPUResource.h"
+#include <GL/glew.h>
+#include "../Interfaces/IGPUResource.h"
 
 
 

@@ -1,11 +1,11 @@
 #ifndef MOUSEPOLLER_H
 #define MOUSEPOLLER_H
 
-#include "..\Assert\Assert.h"
-#include "..\Interfaces\IComponent.h"
-#include "GLFW\glfw3.h"
-#include "..\Messages\MessageManager.h"
-#include "..\Messages\PositionMessage.h"
+#include "../Assert/Assert.h"
+#include "../Interfaces/IComponent.h"
+#include "GLFW/glfw3.h"
+#include "../Messages/MessageManager.h"
+#include "../Messages/PositionMessage.h"
 
 class MousePoller : public IComponent
 {

@@ -1,7 +1,7 @@
 #include "IEntity.h"
-#include "..\Messages\MessageManager.h"
-#include "..\Assert\Assert.h"
-#include "..\Systems\CollisionSystem.h"
+#include "../Messages/MessageManager.h"
+#include "../Assert/Assert.h"
+#include "../Systems/CollisionSystem.h"
 
 IEntity::IEntity()
 {

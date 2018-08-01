@@ -1,7 +1,7 @@
 #ifndef SHADERCOMPONENT_H
 #define SHADERCOMPONENT_H
 
-#include "3rdParty\gl_core_4_3.hpp"
+#include "3rdParty/gl_core_4_3.hpp"
 #include "glfw3.h"
 #include <fstream>
 

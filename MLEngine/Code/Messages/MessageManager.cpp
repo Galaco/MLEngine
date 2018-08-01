@@ -1,5 +1,5 @@
 #include "MessageManager.h"
-#include "..\Assert\Assert.h"
+#include "../Assert/Assert.h"
 
 namespace mauvemessage
 {

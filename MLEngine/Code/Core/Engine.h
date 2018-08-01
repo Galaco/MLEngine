@@ -2,21 +2,21 @@
 #define ENGINE_H
 #include "../Assert/Assert.h"
 #include "../States/TestState.h"
-#include "..\Graphics\GraphicsManager.h"
-#include "..\Entities\GeneralEntity.h"
+#include "../Graphics/GraphicsManager.h"
+#include "../Entities/GeneralEntity.h"
 #include "../States/TestState.h"
 #include "../Messages/MessageManager.h"
-#include "..\Scripts\ScriptManager.h"
-#include "..\Scenes\SceneManager.h"
+#include "../Scripts/ScriptManager.h"
+#include "../Scenes/SceneManager.h"
 
-#include "..\Components\StaticMeshNoIndices.h"
-#include "..\Components\BasicKeyMovement.h"
-#include "..\Components\MousePoller.h"
-#include "..\Systems\CollisionSystem.h"
-#include "..\Systems\InputSystem.h"
-#include "..\Systems\PhysicsSystem.h"
+#include "../Components/StaticMeshNoIndices.h"
+#include "../Components/BasicKeyMovement.h"
+#include "../Components/MousePoller.h"
+#include "../Systems/CollisionSystem.h"
+#include "../Systems/InputSystem.h"
+#include "../Systems/PhysicsSystem.h"
 
-#include "json\json.h"
+#include "json/json.h"
 
 struct EngineConfig
 {

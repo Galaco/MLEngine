@@ -1,9 +1,9 @@
 #ifndef RESOURCEMANAGER_H
 #define RESOURCEMANAGER_H
 
-#include "Loaders\ShaderLoader.h"
-#include "Loaders\ModelLoader.h"
-#include "Loaders\TextureLoader.h"
+#include "Loaders/ShaderLoader.h"
+#include "Loaders/ModelLoader.h"
+#include "Loaders/TextureLoader.h"
 #include <unordered_map>
 
 struct Model

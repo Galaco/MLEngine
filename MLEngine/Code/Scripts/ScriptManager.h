@@ -6,7 +6,6 @@ extern "C" {
 #include "lualib.h"
 #include "lauxlib.h"
 }
-#include <LuaBridge/LuaBridge.h>
 
 
 class ScriptManager
@@ -26,4 +25,4 @@ private:
 
 };
 
-#endif;
+#endif

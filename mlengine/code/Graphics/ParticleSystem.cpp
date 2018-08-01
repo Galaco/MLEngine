@@ -169,46 +169,46 @@ void ParticleSystem::InitParticleBuffers(glm::vec3 accel, glm::vec3 position, co
 	
 	glBindVertexArray(particleArray[0]);
 	glBindBuffer(GL_ARRAY_BUFFER, posBuf[0]);
-	glVertexAttribPointer(0, 3, GL_FLOAT, FALSE, 0, NULL);
+	glVertexAttribPointer(0, 3, GL_FLOAT, false, 0, NULL);
 	glEnableVertexAttribArray(0);
 
 	glBindBuffer(GL_ARRAY_BUFFER, velBuf[0]);
-	glVertexAttribPointer(1, 3, GL_FLOAT, FALSE, 0, NULL);
+	glVertexAttribPointer(1, 3, GL_FLOAT, false, 0, NULL);
 	glEnableVertexAttribArray(1);
 
 	glBindBuffer(GL_ARRAY_BUFFER, startTime[0]);
-	glVertexAttribPointer(2, 1, GL_FLOAT, FALSE, 0, NULL);
+	glVertexAttribPointer(2, 1, GL_FLOAT, false, 0, NULL);
 	glEnableVertexAttribArray(2);
 
 	glBindBuffer(GL_ARRAY_BUFFER, initVel);
-	glVertexAttribPointer(3, 3, GL_FLOAT, FALSE, 0, NULL);
+	glVertexAttribPointer(3, 3, GL_FLOAT, false, 0, NULL);
 	glEnableVertexAttribArray(3);
 
 	glBindBuffer(GL_ARRAY_BUFFER, initPos);
-	glVertexAttribPointer(4, 3, GL_FLOAT, FALSE, 0, NULL);
+	glVertexAttribPointer(4, 3, GL_FLOAT, false, 0, NULL);
 	glEnableVertexAttribArray(4);
 
 	//Second set of buffers
 
 	glBindVertexArray(particleArray[1]);
 	glBindBuffer(GL_ARRAY_BUFFER, posBuf[1]);
-	glVertexAttribPointer(0, 3, GL_FLOAT, FALSE, 0, NULL);
+	glVertexAttribPointer(0, 3, GL_FLOAT, false, 0, NULL);
 	glEnableVertexAttribArray(0);
 
 	glBindBuffer(GL_ARRAY_BUFFER, velBuf[1]);
-	glVertexAttribPointer(1, 3, GL_FLOAT, FALSE, 0, NULL);
+	glVertexAttribPointer(1, 3, GL_FLOAT, false, 0, NULL);
 	glEnableVertexAttribArray(1);
 
 	glBindBuffer(GL_ARRAY_BUFFER, startTime[1]);
-	glVertexAttribPointer(2, 1, GL_FLOAT, FALSE, 0, NULL);
+	glVertexAttribPointer(2, 1, GL_FLOAT, false, 0, NULL);
 	glEnableVertexAttribArray(2);
 
 	glBindBuffer(GL_ARRAY_BUFFER, initVel);
-	glVertexAttribPointer(3, 3, GL_FLOAT, FALSE, 0, NULL);
+	glVertexAttribPointer(3, 3, GL_FLOAT, false, 0, NULL);
 	glEnableVertexAttribArray(3);
 
 	glBindBuffer(GL_ARRAY_BUFFER, initPos);
-	glVertexAttribPointer(4, 3, GL_FLOAT, FALSE, 0, NULL);
+	glVertexAttribPointer(4, 3, GL_FLOAT, false, 0, NULL);
 	glEnableVertexAttribArray(4);
 
 	glBindVertexArray(0);

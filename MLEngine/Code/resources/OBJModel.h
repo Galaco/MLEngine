@@ -2,11 +2,11 @@
 #define OBJMODEL_H
 
 #include "../Assert/Assert.h"
-#include "..\Interfaces\IResource.h"
-#include "GL\glew.h"
-#include "GLM\glm.hpp"
-#include "GLFW\glfw3.h"
-#include "..\File\FileManager.h"
+#include "../Interfaces/IResource.h"
+#include <GL/glew.h>
+#include "glm/glm.hpp"
+#include "GLFW/glfw3.h"
+#include "../File/FileManager.h"
 #include <string>
 #include <vector>
 

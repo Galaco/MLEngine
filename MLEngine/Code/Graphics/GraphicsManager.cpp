@@ -1,5 +1,5 @@
 #include "GraphicsManager.h"
-#include "..\Resources\GPUResourceManager.h"
+#include "../Resources/GPUResourceManager.h"
 
 bool GraphicsManager::windowShouldBeClosed = false;
 
@@ -291,7 +291,7 @@ bool GraphicsManager::Init(int GLVersionMajor, int GLVersionMinor)
 	currentCamera->SetPosition(glm::vec3(0.0f, 3.0f, 3.0f));
 
 	char GLVersionString[10]; 
-	sprintf_s(GLVersionString, "v%i.%i", GLVersionMajor, GLVersionMinor);
+	std::snprintf(GLVersionString, 10, "v%i.%i", GLVersionMajor, GLVersionMinor);
 	DEBUGWRITEINFO("Inited Graphics Manager with GL Version:",GLVersionString);
 
 	return true;

@@ -2,9 +2,9 @@
 #define JSONFile_H
 
 #include "../Assert/Assert.h"
-#include "..\Interfaces\IResource.h"
-#include "..\File\FileManager.h"
-#include "json\json.h"
+#include "../Interfaces/IResource.h"
+#include "../File/FileManager.h"
+#include "json/json.h"
 #include <string>
 #include <vector>
 

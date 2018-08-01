@@ -41,7 +41,7 @@ const Json::Value& JSONFile::GetJsonKeyValue(const char* key)
 	{
 		mauveassert::Assert::HandleAssert(mauveassert::ENUM_severity::SEV_ERROR, "Error retrieving json key value");
 		DEBUGWRITEINFO("Key value", key);
-		Json::Value& empty = Json::Value(0);
+		const Json::Value& empty = Json::Value(0);
 		return empty;
 	}
 }

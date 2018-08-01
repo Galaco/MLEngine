@@ -2,9 +2,9 @@
 #define CAMERA_H
 
 #define GLM_FORCE_RADIANS
-#include "glm\glm.hpp"
-#include "GameObjects\GameObject.h"
-#include "glm\gtx\rotate_vector.hpp"
+#include "glm/glm.hpp"
+#include "GameObjects/GameObject.h"
+#include "glm/gtx/rotate_vector.hpp"
 class Camera
 {
 private:

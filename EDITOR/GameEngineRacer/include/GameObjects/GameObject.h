@@ -2,10 +2,10 @@
 #define GAMEOBJECT_H
 
 #include <vector>
-#include "Components\TransformComponent.h"
-#include "Components\RenderComponent.h"
+#include "Components/TransformComponent.h"
+#include "Components/RenderComponent.h"
 #include "ResourceManager.h"
-#include "Components\AnimationComponent.h"
+#include "Components/AnimationComponent.h"
 #include "ResourceManager.h"
 
 

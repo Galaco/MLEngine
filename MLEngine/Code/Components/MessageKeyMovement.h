@@ -1,11 +1,11 @@
 #ifndef MessageKeyMovement_H
 #define MessageKeyMovement_H
-#include "..\Assert\Assert.h"
-#include "..\Interfaces\IComponent.h"
-#include "..\Messages\PositionMessage.h"
-#include "..\Messages\MessageManager.h"
-#include "..\Messages\KeyMessage.h"
-#include "GLFW\glfw3.h"
+#include "../Assert/Assert.h"
+#include "../Interfaces/IComponent.h"
+#include "../Messages/PositionMessage.h"
+#include "../Messages/MessageManager.h"
+#include "../Messages/KeyMessage.h"
+#include "GLFW/glfw3.h"
 #include <map>
 
 class MessageKeyMovement : public IComponent

@@ -1,9 +1,9 @@
 #ifndef INPUTSYSTEM_H
 #define INPUTSYSTEM_H
-#include "..\Components\MessageKeyMovement.h"
-#include "..\Components\MousePoller.h"
-#include "..\Interfaces\IEntity.h"
-#include "GLFW\glfw3.h"
+#include "../Components/MessageKeyMovement.h"
+#include "../Components/MousePoller.h"
+#include "../Interfaces/IEntity.h"
+#include "GLFW/glfw3.h"
 
 class InputSystem : public IEntity
 {

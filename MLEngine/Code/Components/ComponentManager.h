@@ -5,8 +5,8 @@
 #include <memory>
 #include <vector>
 #include <string>
-#include "..\Interfaces\IComponent.h"
-#include "..\Components\Transform.h"
+#include "../Interfaces/IComponent.h"
+#include "../Components/Transform.h"
 
 typedef std::unordered_multimap<std::string, IComponent*>::iterator componentMapIterator;
 typedef std::unordered_multimap<std::string, IComponent*> componentMapType;

@@ -2,9 +2,9 @@
 //data to the GPU and storing it's location and other attributes
 #ifndef GPUModel_H
 #define GPUModel_H
-#include "..\Assert\Assert.h"
-#include "GL\glew.h"
-#include "..\Interfaces\IGPUResource.h"
+#include "../Assert/Assert.h"
+#include <GL/glew.h>
+#include "../Interfaces/IGPUResource.h"
 #include <vector>
 
 class GPUModel : public IGPUResource 

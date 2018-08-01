@@ -2,10 +2,10 @@
 #define GPUResourceManager_H
 #include <unordered_map>
 #include <memory>
-#include "..\Assert\Assert.h"
-#include "..\Resources\GPUModel.h"
-#include "..\Resources\GPUTexture.h"
-#include "..\Interfaces\IGPUResource.h"
+#include "../Assert/Assert.h"
+#include "../resources/GPUModel.h"
+#include "../resources/GPUTexture.h"
+#include "../Interfaces/IGPUResource.h"
 
 
 typedef std::unordered_map<std::string, IGPUResource*> GPUResourceMap;

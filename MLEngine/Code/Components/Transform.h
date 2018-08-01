@@ -2,7 +2,7 @@
 #define TRANFORMCOMPONENT_H
 #include "../Messages/BaseMessage.h"
 #include "../Messages/PositionMessage.h"
-#include "GLM\glm.hpp"
+#include "glm/glm.hpp"
 #include <iostream>
 
 //For transforming/positioning stuff

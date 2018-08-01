@@ -1,6 +1,6 @@
 #include "ScriptManager.h"
 
-
+#include "../../../libs/LuaBridge/include/LuaBridge/LuaBridge.h"
 #include "ClassHelpers.h"
 
 
@@ -31,8 +31,6 @@ void ScriptManager::Close()
 
 void ScriptManager::bindElements()
 {
-
-
 	//Perform out actual bindings to Lua here
 	luabridge::getGlobalNamespace(luaVM)
 		//Interfaces

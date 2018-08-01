@@ -3,12 +3,14 @@
 
 #include <stdio.h>
 #include <AntTweakBar.h>
-#include "Scene\Scene.h"
+#include "Scene/Scene.h"
 #include <vector>
 #include <assert.h>
 
 #include <Windows.h>
-#include <glew.h>
+#ifndef __APPLE__
+	#include <glew.h>
+#endif
 #include <glfw3.h>
 
 

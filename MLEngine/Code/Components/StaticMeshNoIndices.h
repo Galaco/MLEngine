@@ -1,8 +1,8 @@
 #ifndef StaticMeshNoIndicesCOMPONENT_H
 #define StaticMeshNoIndicesCOMPONENT_H
-#include "..\Interfaces\IComponent.h"
-#include "GL\glew.h"
-#include "GLFW\glfw3.h"
+#include "../Interfaces/IComponent.h"
+#include <GL/glew.h>
+#include "GLFW/glfw3.h"
 
 
 #include <string>

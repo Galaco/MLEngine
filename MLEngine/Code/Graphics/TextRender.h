@@ -1,10 +1,10 @@
 #ifndef TEXTRENDER_H
 #define TEXTRENDER_H
-#include "..\resources\Shader.h"
-#include "..\resources\ImageTexture.h"
-#include "..\resources\ResourceManager.h"
-#include "..\GLEW\include\GL\glew.h"
-#include "..\GLFW\include\GLFW\glfw3.h"
+#include "../resources/Shader.h"
+#include "../resources/ImageTexture.h"
+#include "../resources/ResourceManager.h"
+#include <GL/glew.h>
+#include "../GLFW/include/GLFW/glfw3.h"
 
 
 

@@ -1,11 +1,11 @@
 #ifndef CLASSHELPERS_H
 #define CLASSHELPERS_H
 
-#include <GLM/glm.hpp>
-#include "..\Resources\GPUResourceManager.h"
-#include "..\Resources\ResourceManager.h"
-#include "..\Resources\OBJModel.h"
-#include "..\Components\StaticMesh.h"
+#include <glm/glm.hpp>
+#include "../resources/GPUResourceManager.h"
+#include "../resources/ResourceManager.h"
+#include "../resources/OBJModel.h"
+#include "../Components/StaticMesh.h"
 #include "../Scenes/SceneManager.h"
 
 #include "../Components/BasicKeyMovement.h"
@@ -67,7 +67,7 @@ struct StaticMeshHelper
 		if (gotTexture == nullptr)
 		{
 			//Use the no texture found texture
-			gotTexture = mauvefileresource::ResourceManager::GetResource<ImageTexture>("data\\images\\default.png");
+			gotTexture = mauvefileresource::ResourceManager::GetResource<ImageTexture>("data//images//default.png");
 		}
 		GPUTexture* gotGPUTexture = mauvegpuresource::GPUResourceManager::GetResource<GPUTexture>(path);
 		if (gotGPUTexture == nullptr)

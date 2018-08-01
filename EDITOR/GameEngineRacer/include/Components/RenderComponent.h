@@ -1,17 +1,19 @@
 #ifndef RENDERCOMPONENT_H
 #define RENDERCOMPONENT_H
 
-#include <Windows.h>
+#ifdef _WIN32
+	#include <Windows.h>
+#endif
 #include <iostream>
 
 #include <glew.h>
 #include <glfw3.h>
-#include "3rdParty\Texture.h"
+#include "3rdParty/Texture.h"
 #include "ResourceManager.h"
 #include <glew.h>
 #include <glfw3.h>
 #include <vector>
-#include "GameObjects\GameObject.h"
+#include "GameObjects/GameObject.h"
 
 class GameObject;
 class ResourceManager;

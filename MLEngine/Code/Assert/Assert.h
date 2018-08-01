@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-#include <Windows.h>
+//#include <Windows.h>
 
 
 namespace mauveassert
@@ -122,7 +122,7 @@ namespace mauveassert
 }
 
 //Assert Macros
-#define NULLPTRCHECK(ptr, msg) ptr == nullptr?mauveassert::Assert::HandleException(msg):0;
+#define NULLPTRCHECK(ptr, msg) if (ptr == nullptr) mauveassert::Assert::HandleException(msg);
 #define DEBUGWRITEINFO(info, value) mauveassert::Assert::WriteDebug(info, value, mauveassert::ENUM_severity::SEV_INFO);
 
 #endif

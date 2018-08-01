@@ -1,12 +1,12 @@
 #ifndef PHYSICSSYSTEM_H
 #define PHYSICSSYSTEM_H
 #include "CollisionSystem.h"
-#include "..\Messages\CollisionMessage.h"
-#include "..\Messages\MessageManager.h"
-#include "..\Interfaces\IEntity.h"
-#include "..\Components\BoundingVolume.h"
-#include "GLFW\glfw3.h"
-#include "GLM\gtx\transform.hpp"
+#include "../Messages/CollisionMessage.h"
+#include "../Messages/MessageManager.h"
+#include "../Interfaces/IEntity.h"
+#include "../Components/BoundingVolume.h"
+#include "GLFW/glfw3.h"
+#include "glm/gtx/transform.hpp"
 
 class PhysicsSystem : public IEntity
 {

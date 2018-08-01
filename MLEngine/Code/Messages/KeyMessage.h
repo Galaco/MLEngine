@@ -1,7 +1,7 @@
 #ifndef KeyMessage_H
 #define KeyMessage_H
 #include "BaseMessage.h"
-#include "GLM\vec3.hpp"
+#include "glm/vec3.hpp"
 
 namespace mauvemessage
 {

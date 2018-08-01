@@ -3,14 +3,14 @@
 
 #include <glew.h>
 #include <glfw3.h>
-#include "glm\glm.hpp"
+#include "glm/glm.hpp"
 #include <stdlib.h>
 #include <stdio.h>
-#include "Scene\Scene.h"
+#include "Scene/Scene.h"
 #include <AntTweakBar.h>
-#include "UI\GUI.h"
+#include "UI/GUI.h"
 #include "ResourceManager.h"
-#include "UI\UI.h"
+#include "UI/UI.h"
 #include <vector>
 
 //#define PI 3.14159265359

@@ -2,7 +2,7 @@
 #define ScriptComponent_H
 #include "../Interfaces/IComponent.h"
 #include "../Assert/Assert.h"
-#include "..\Messages\CollisionMessage.h"
+#include "../Messages/CollisionMessage.h"
 
 #include <iostream>
 #include <memory>

@@ -1,12 +1,12 @@
 #ifndef STATICMESHCOMPONENT_H
 #define STATICMESHCOMPONENT_H
-#include "..\Assert\Assert.h"
-#include "..\Resources\GPUTexture.h"
-#include "..\Interfaces\IComponent.h"
-#include "..\..\Libs\TextureLoader\Bitmap.h"
-#include "..\Resources\GPUModel.h"
-#include "GL\glew.h"
-#include "GLFW\glfw3.h"
+#include "../Assert/Assert.h"
+#include "../resources/GPUTexture.h"
+#include "../Interfaces/IComponent.h"
+#include "../../libs/TextureLoader/Bitmap.h"
+#include "../resources/GPUModel.h"
+#include <GL/glew.h>
+#include "GLFW/glfw3.h"
 
 
 #include <string>

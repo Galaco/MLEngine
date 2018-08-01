@@ -6,7 +6,7 @@
 #include <sstream>
 #include <algorithm>
 #include <iostream>
-#include <glm\glm.hpp>
+#include <glm/glm.hpp>
 
 #include <glfw3.h>
 

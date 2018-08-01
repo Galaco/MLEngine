@@ -1,7 +1,7 @@
 #ifndef SkyBox_H
 #define SkyBox_H
-#include "GL\glew.h"
-#include "..\Resources\ImageTexture.h"
+#include <GL/glew.h>
+#include "../resources/ImageTexture.h"
 
 class SkyBox
 {

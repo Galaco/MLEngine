@@ -15,7 +15,7 @@ SceneManager::SceneManager(std::unique_ptr<GraphicsManager> graph, PhysicsSystem
 	lastDt = 0.0f;
 	currentPlayer = nullptr;
 	physicsManager = physics;
-	nextLevel = "data\\scenes\\TomsWorld.scn";
+	nextLevel = "data/scenes/TomsWorld.scn";
 }
 
 SceneManager::~SceneManager()
@@ -41,14 +41,14 @@ std::unique_ptr<SceneConfig> SceneManager::LoadSceneFromFile(const char* filePat
 {
 	
 
-	std::string path = "data\\scenes\\loading.scn";
-	if (filePath != "data\\scenes\\loading.scn")
+	std::string path = "data/scenes/loading.scn";
+	if (filePath != "data/scenes/loading.scn")
 	{
 		if (nextLevel != "")
 			path = nextLevel;
-		if (filePath == "data\\scenes\\menu.scn")
+		if (filePath == "data/scenes/menu.scn")
 		{
-			path = "data\\scenes\\menu.scn";
+			path = "data/scenes/menu.scn";
 		}
 	}
 
@@ -96,7 +96,7 @@ std::unique_ptr<SceneConfig> SceneManager::LoadSceneFromFile(const char* filePat
 					std::string entType = value["type"].asString();
 					std::string entID = it.key().asString();
 					char result[100];
-					sprintf_s(result, "Loading entityID: \n%s", entID.c_str());
+					std::snprintf(result, 100, "Loading entityID: \n%s", entID.c_str());
 					graphicsManager->RenderText(result,loadingTextX,loadingTextY,loadingTextSize,gotEntities);
 					if (entType == "generalentity")
 					{
@@ -139,7 +139,7 @@ std::unique_ptr<SceneConfig> SceneManager::LoadSceneFromFile(const char* filePat
 								Json::Value componentContents = (*it3);
 
 								char result[100];
-								sprintf_s(result, "Loading component: \n%s", componentID.asCString());
+								std::snprintf(result, 100, "Loading component: \n%s", componentID.asCString());
 								graphicsManager->RenderText(result,loadingTextX,loadingTextY,loadingTextSize,gotEntities);
 
 								if (componentContents["type"] == "staticmesh")
@@ -150,7 +150,7 @@ std::unique_ptr<SceneConfig> SceneManager::LoadSceneFromFile(const char* filePat
 									//Load in the obj file specified
 									std::string gotOBJPath = componentContents["OBJModel"].asString();
 									char result[100];
-									sprintf_s(result, "Loading OBJ: %s", gotOBJPath.c_str());
+									std::snprintf(result, 100, "Loading OBJ: %s", gotOBJPath.c_str());
 									graphicsManager->RenderText(result,loadingTextX,loadingTextY,loadingTextSize,gotEntities);
 
 									//Load in the texture location

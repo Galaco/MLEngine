@@ -1,11 +1,11 @@
 #ifndef BasicBoneCOMPONENT_H
 #define BasicBoneCOMPONENT_H
-#include "..\Assert\Assert.h"
-#include "..\Interfaces\IComponent.h"
-#include "..\..\Libs\TextureLoader\Bitmap.h"
-#include "..\Components\Transform.h"
-#include "GL\glew.h"
-#include "GLFW\glfw3.h"
+#include "../Assert/Assert.h"
+#include "../Interfaces/IComponent.h"
+#include "../../../libs/TextureLoader/Bitmap.h"
+#include "../Components/Transform.h"
+#include <GL/glew.h>
+#include "GLFW/glfw3.h"
 
 
 #include <string>

@@ -1,10 +1,10 @@
 #ifndef BASICKEYMOVEMENT_H
 #define BASICKEYMOVEMENT_H
-#include "..\Assert\Assert.h"
-#include "..\Interfaces\IComponent.h"
-#include "..\Messages\PositionMessage.h"
-#include "..\Messages\MessageManager.h"
-#include "GLFW\glfw3.h"
+#include "../Assert/Assert.h"
+#include "../Interfaces/IComponent.h"
+#include "../Messages/PositionMessage.h"
+#include "../Messages/MessageManager.h"
+#include "GLFW/glfw3.h"
 #include <map>
 #include <algorithm>
 #include <string>

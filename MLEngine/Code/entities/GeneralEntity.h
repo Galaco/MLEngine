@@ -1,6 +1,6 @@
 #ifndef GENERALENTITY_H
 #define GENERALENTITY_H
-#include "..\Interfaces\IEntity.h"
+#include "../Interfaces/IEntity.h"
 
 class GeneralEntity : public IEntity
 {

@@ -1,19 +1,21 @@
-#define WIN32_LEAN_AND_MEAN
+#ifdef _WIN32
+	#define WIN32_LEAN_AND_MEAN
+#endif
 
 #include <memory>
 #include <thread>
-#include "Assert\Assert.h"
+#include "Assert/Assert.h"
 #include "Core/Engine.h"
-#include "Messages\MessageManager.h"
-#include "Resources\GPUResourceManager.h"
-#include "Resources\ResourceManager.h"
+#include "Messages/MessageManager.h"
+#include "Resources/GPUResourceManager.h"
+#include "Resources/ResourceManager.h"
 
 
 void ExceptionHandler(const char* message);
 int guardedMain();
 
 
-int main()
+int main(int argc, char** argv)
 {
 	mauveassert::Assert::InitExceptionHandler(&ExceptionHandler);
 	try{

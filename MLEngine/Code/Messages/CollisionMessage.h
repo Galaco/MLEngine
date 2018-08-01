@@ -1,8 +1,8 @@
 #ifndef CollisionMessage_H
 #define CollisionMessage_H
 #include "BaseMessage.h"
-#include "GLM\vec3.hpp"
-#include "..\Components\BoundingVolume.h"
+#include "glm/vec3.hpp"
+#include "../Components/BoundingVolume.h"
 
 struct CollisionManifold
 {

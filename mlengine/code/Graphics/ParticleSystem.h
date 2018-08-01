@@ -1,10 +1,10 @@
 #ifndef PARTICLESYSTEM_H
 #define PARTICLESYSTEM_H
-#include "..\resources\ResourceManager.h"
-#include "..\resources\Shader.h"
-#include "..\resources\GPUTexture.h"
-#include "glm\gtc\constants.hpp"
-#include "GLM\gtx\transform.hpp"
+#include "../resources/ResourceManager.h"
+#include "../resources/Shader.h"
+#include "../resources/GPUTexture.h"
+#include "glm/gtc/constants.hpp"
+#include "glm/gtx/transform.hpp"
 
 
 class ParticleSystem

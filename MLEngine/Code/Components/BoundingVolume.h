@@ -6,10 +6,10 @@
 #define BOUNDING_TYPE_SPHERE 3
 #define BOUNDING_TYPE_CAPSULE 4
 
-#include "..\Assert\Assert.h"
-#include "..\Interfaces\IComponent.h"
-#include "..\..\glm\GLM\glm.hpp"
-#include "..\Components\Transform.h"
+#include "../Assert/Assert.h"
+#include "../Interfaces/IComponent.h"
+#include "../../glm/glm/glm.hpp"
+#include "../Components/Transform.h"
 
 class BoundingVolume: public IComponent
 {

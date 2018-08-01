@@ -1,5 +1,5 @@
 #include "FileManager.h"
-#include "..\Assert\Assert.h"
+#include "../Assert/Assert.h"
 
 namespace mauvefile
 {
@@ -65,7 +65,7 @@ namespace mauvefile
 	bool FileManager::OpenFile(const char* filename)
 	{
 		//openFile = std::ifstream(filename, std::ios::in);
-		fopen_s(&openFilePTR, filename, "r");
+		openFilePTR = fopen(filename, "r");
 		//if (!openFile.good())
 		//{
 		//	std::string errorMessage;
@@ -85,8 +85,8 @@ namespace mauvefile
 	bool FileManager::ReadLineFromFile(std::string& line)
 	{
 		std::ios::sync_with_stdio(false);
-		bool result = std::getline(openFile, line) != 0;
-		return result;
+
+		return (std::getline(openFile, line) ? true : false);
 	}
 
 	bool FileManager::ReadLineFromFileChar(char* line)

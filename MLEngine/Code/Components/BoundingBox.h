@@ -2,9 +2,9 @@
 #define BOUNDINGBOX_H
 
 #include "BoundingVolume.h"
-#include "..\Assert\Assert.h"
-#include "..\Interfaces\IComponent.h"
-#include "..\..\glm\GLM\glm.hpp"
+#include "../Assert/Assert.h"
+#include "../Interfaces/IComponent.h"
+#include "../../glm/glm/glm.hpp"
 
 class BoundingBox: public BoundingVolume
 {

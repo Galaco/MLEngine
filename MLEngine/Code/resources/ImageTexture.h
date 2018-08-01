@@ -2,9 +2,9 @@
 #define IMAGETEXTURE_H
 
 #include "../Assert/Assert.h"
-#include "..\Interfaces\IResource.h"
-#include "..\File\FileManager.h"
-#include "..\..\Libs\TextureLoader\Bitmap.h"
+#include "../Interfaces/IResource.h"
+#include "../File/FileManager.h"
+#include "../../../libs/TextureLoader/Bitmap.h"
 
 #include <string>
 #include <vector>

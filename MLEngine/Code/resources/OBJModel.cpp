@@ -56,10 +56,10 @@ bool OBJModel::LoadFromFile(std::string filename)
 			//Handle if gotLine is a vertex (has a blank space next to gotLine)
 			if (identifierChar[1] == ' ')
 			{
-				char * vertStart = strtok_s(gotLine, " ", &next_token);
+				char * vertStart = strtok_r(gotLine, " ", &next_token);
 				for (int i = 0; i < 3; ++i)
 				{
-					vertStart = strtok_s(NULL, " ", &next_token);
+					vertStart = strtok_r(NULL, " ", &next_token);
 					tempVerts[currentVertCount++] = ((GLfloat)atof(vertStart));
 				}
 			}
@@ -69,11 +69,11 @@ bool OBJModel::LoadFromFile(std::string filename)
 			else if (identifierChar[1] == 't')
 			{
 				//Parse the UV
-				char * vertStart = strtok_s(gotLine, " ", &next_token);
+				char * vertStart = strtok_r(gotLine, " ", &next_token);
 				//Parse the normals
 				for (int i = 0; i < 2; ++i)
 				{
-					vertStart = strtok_s(NULL, " ", &next_token);
+					vertStart = strtok_r(NULL, " ", &next_token);
 					tempUVs[currentUVCount++] = (GLfloat)atof(vertStart);
 				}
 			}
@@ -81,11 +81,11 @@ bool OBJModel::LoadFromFile(std::string filename)
 			//Handle if gotLine is a normal (has a n next to gotLine)
 			else if (identifierChar[1] == 'n')
 			{
-				char * vertStart = strtok_s(gotLine, " ", &next_token);
+				char * vertStart = strtok_r(gotLine, " ", &next_token);
 				//Parse the vertex
 				for (int i = 0; i < 3; ++i)
 				{
-					char * vertStart = strtok_s(NULL, " ", &next_token);
+					char * vertStart = strtok_r(NULL, " ", &next_token);
 					tempNormals[currentNormalCount++] = (GLfloat)(atof(vertStart));
 				}
 			}
@@ -95,12 +95,12 @@ bool OBJModel::LoadFromFile(std::string filename)
 		if (identifierChar[0] == 'f' && identifierChar[1] == ' ')
 		{
 			//std::size_t startingPos = gotLine.find(' ') +1;
-			char * vertStart = strtok_s(gotLine, " /", &next_token);
+			char * vertStart = strtok_r(gotLine, " /", &next_token);
 			//Parse the vertex
 			for (int i = 0; i < 9; ++i)
 			{
 				++parsedIndexCount;
-				vertStart = strtok_s(NULL, " /", &next_token);
+				vertStart = strtok_r(NULL, " /", &next_token);
 				if (i == 0 || i == 3 || i == 6)
 				{
 					int position = ((std::stoi(vertStart) - 1) * 3);

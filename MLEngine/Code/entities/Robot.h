@@ -1,12 +1,12 @@
 #ifndef Robot_H
 #define Robot_H
-#include "..\Interfaces\IEntity.h"
-#include "..\Components\StaticMesh.h"
-#include "..\Components\BasicBone.h"
-#include "..\resources\OBJModel.h"
-#include "..\resources\ImageTexture.h"
-#include "..\resources\ResourceManager.h"
-#include "..\Messages\MessageManager.h"
+#include "../Interfaces/IEntity.h"
+#include "../Components/StaticMesh.h"
+#include "../Components/BasicBone.h"
+#include "../resources/OBJModel.h"
+#include "../resources/ImageTexture.h"
+#include "../resources/ResourceManager.h"
+#include "../Messages/MessageManager.h"
 
 class Robot : public IEntity
 {

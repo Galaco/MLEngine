@@ -1,10 +1,10 @@
 #ifndef CAMERAENTITY_H
 #define CAMERAENTITY_H
-#include "..\Interfaces\IEntity.h"
-#include "GLM\glm.hpp"
-#include "GLM\gtx\transform.hpp"
-#include "..\Messages\PositionMessage.h"
-#include "..\Messages\MessageManager.h"
+#include "../Interfaces/IEntity.h"
+#include "glm/glm.hpp"
+#include "glm/gtx/transform.hpp"
+#include "../Messages/PositionMessage.h"
+#include "../Messages/MessageManager.h"
 
 class CameraEntity : public IEntity
 {

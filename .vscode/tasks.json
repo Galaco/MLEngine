@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "--std=c++11",
+                "-g",
+                "MLEngine/Code/*/*.cpp",
+                "libs/jsoncpp/*.cpp",
+                "libs/TextureLoader/*.cpp",
+                "-omlengine.out",
+                "-lGLEW",
+                "-lglfw",
+                "-llua",
+                "-L/usr/local/lib/",
+                "-I/usr/local/include/",
+                "-Ilibs/GLEW/include",
+                "-Ilibs/GLFW/include",
+                "-Ilibs/GLLoadGen/include",
+                "-Ilibs/GLM",
+                "-Ilibs/jsoncpp",
+                "-Ilibs/LuaBridge/include",
+                "-Ilibs/TextureLoader",
+                "-framework", "OpenGL",
+                "-Wc++11-extensions"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

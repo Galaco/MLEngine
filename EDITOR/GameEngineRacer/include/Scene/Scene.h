@@ -3,13 +3,13 @@
 
 #include <string>
 #include <vector>
-#include "GameObjects\GameObject.h"
+#include "GameObjects/GameObject.h"
 
 #include "Camera.h"
 #include "ResourceManager.h"
-#include "json\json.h"
+#include "json/json.h"
 #include <unordered_map>
-#include "glm\gtx\vector_angle.hpp"
+#include "glm/gtx/vector_angle.hpp"
 struct Light
 {
 	std::string name;

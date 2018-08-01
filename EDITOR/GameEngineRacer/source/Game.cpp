@@ -60,7 +60,7 @@ void Game::Initialise()
 	glfwWindowHint( GLFW_CONTEXT_VERSION_MINOR, 0 );
 	//glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_ANY_PROFILE);
-	//glfwWindowHint(GLFW_RESIZABLE, FALSE);
+	//glfwWindowHint(GLFW_RESIZABLE, false);
 	glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, GL_TRUE);
 	window = glfwCreateWindow(width, height, "Mauve Editor", NULL, NULL);
 	if (!window)

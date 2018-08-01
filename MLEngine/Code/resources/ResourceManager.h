@@ -2,7 +2,7 @@
 #define RESOURCEMANAGER_H
 
 #include "../Assert/Assert.h"
-#include "..\Interfaces\IResource.h"
+#include "../Interfaces/IResource.h"
 #include <unordered_map>
 #include <memory>
 #include <string>

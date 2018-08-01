@@ -1,15 +1,15 @@
 #ifndef COLLISIONSYSTEM_H
 #define COLLISIONSYSTEM_H
 #include <vector>
-#include "GLM\gtx\transform.hpp"
-#include "..\Components\BoundingVolume.h"
-#include "..\Components\BoundingBox.h"
-#include "..\Components\BoundingBoxO.h"
-#include "..\Components\BoundingSphere.h"
-#include "..\Components\BoundingCapsule.h"
-#include "..\Messages\CollisionMessage.h"
-#include "..\Messages\MessageManager.h"
-#include "..\Interfaces\IEntity.h"
+#include "glm/gtx/transform.hpp"
+#include "../Components/BoundingVolume.h"
+#include "../Components/BoundingBox.h"
+#include "../Components/BoundingBoxO.h"
+#include "../Components/BoundingSphere.h"
+#include "../Components/BoundingCapsule.h"
+#include "../Messages/CollisionMessage.h"
+#include "../Messages/MessageManager.h"
+#include "../Interfaces/IEntity.h"
 
 struct CollisionEvent
 {

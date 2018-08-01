@@ -1,11 +1,11 @@
 #ifndef SCENETYPES_H
 #define SCENETYPES_H
-#include "GLM\glm.hpp"
-#include "..\resources\Shader.h"
-#include "..\entities\Camera.h"
-#include "..\Messages\PositionMessage.h"
-#include "..\Messages\BaseMessage.h"
-#include "..\Messages\MessageManager.h"
+#include "glm/glm.hpp"
+#include "../resources/Shader.h"
+#include "../Entities/Camera.h"
+#include "../Messages/PositionMessage.h"
+#include "../Messages/BaseMessage.h"
+#include "../Messages/MessageManager.h"
 #include <vector>
 #include <memory>
 #include <map>

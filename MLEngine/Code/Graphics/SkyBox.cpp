@@ -195,12 +195,12 @@ void SkyBox::InitSkybox()
     glGenBuffers(2, buffers);
     glBindBuffer(GL_ARRAY_BUFFER, buffers[0]);
     glBufferData(GL_ARRAY_BUFFER, floatCount, skyboxVertices, GL_STATIC_DRAW);
-	glVertexAttribPointer( (GLuint)0, 3, GL_FLOAT, FALSE, 0, NULL);
+	glVertexAttribPointer( (GLuint)0, 3, GL_FLOAT, false, 0, NULL);
     glEnableVertexAttribArray(0);  // Vertex position
 
 	glBindBuffer(GL_ARRAY_BUFFER, buffers[1]);
     glBufferData(GL_ARRAY_BUFFER, floatCount, skyboxVertices, GL_STATIC_DRAW);
-    glVertexAttribPointer( (GLuint)1, 3, GL_FLOAT, FALSE, 0, NULL );
+    glVertexAttribPointer( (GLuint)1, 3, GL_FLOAT, false, 0, NULL );
     glEnableVertexAttribArray(1);  // Vertex normal
 
 	glBindVertexArray(0);

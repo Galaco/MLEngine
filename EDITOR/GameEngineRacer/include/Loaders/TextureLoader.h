@@ -1,8 +1,8 @@
 #ifndef TEXTURELOADER_H
 #define TEXTURELOADER_H
 
-#include "3rdParty\Bitmap.h"
-#include "3rdParty\Texture.h"
+#include "3rdParty/Bitmap.h"
+#include "3rdParty/Texture.h"
 
 class TextureLoader
 {
